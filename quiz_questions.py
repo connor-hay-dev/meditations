@@ -18,22 +18,30 @@ questions = {
 }
 
 # lists question and answer options 
-
+num_correct = 0
 for num, (question, alt_answers) in enumerate(questions.items(), start=1):
     print(f"\nQuestion {num}")
     # prints the question with a question mark so I do not have to remember to put them in when I make the question lol
     print(f"{question}?")
     correct_answer = alt_answers[0]
-    numbered_answers = dict(zip(ascii_lowercase, sorted_alt))
     # sorted() changes the answer order (orders alphabetically to shuffle the order)
-    sorted_alt = sorted(alt_answers)
+    numbered_answers = dict(zip(ascii_lowercase, sorted(alt_answers)))
     # add a number for each question option (iterates through the for loop and number each option)
-    for number, alternative in enumerate(sorted_alt):
+    for number, alternative in numbered_answers.items():
         print(f" {number}) {alternative}")
-    # takes user input as an integer
-    answer_number = int(input(f"{question}? "))
-    answer = sorted_alt[answer_number]
+   
+    while (answer_number := input("\nYour Choice?: ")) not in numbered_answers:
+        print(f"Please pick between options a, b, c, or d")
+
+    answer = numbered_answers[answer_number]
     if answer == correct_answer:
-        print("Correct - Great job!")
+        num_correct += 1
+        print("⭐️Correct - Great job!⭐️")
     else:
-        print(f"The answer is {correct_answer}, not {answer!r}. Good Try!")
+        print(f"🛑The answer is {correct_answer}, not {answer!r}. Good Try!🛑")
+
+print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+print(f"\nYou got {num_correct} answers correct out of {num} questions!")
+average = (num_correct/num)*100
+print(f"That is a success rate of ", round(average, 2), "%!")
+print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")

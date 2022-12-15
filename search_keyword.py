@@ -71,13 +71,9 @@ def return_keyword_passages():
     else:
         print("That is a not a book in Meditations. Please try again!")
 
-def book_5_test():
-    if meditations_book_to_search_num_int == 5:
-        print(len(subchapters_with_keyword_5))
-
 
 # returns the output of the list and seperates each list item into its own, seperate paragraph. Improves legibility a lot!
-
+# loops through the outputs and inserts a blank link before and after each output. 
 
 def return_with_space_between_each_output():
     if return_keyword_passages() == subchapters_with_keyword_1:
