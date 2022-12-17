@@ -43,3 +43,12 @@ def ask_questions(question, alt_answers):
     else:
         print(f"🛑The answer is {correct_answer}, not {answer!r}. Good Try!🛑")
         return 0
+
+def get_answers(question, alt_answers):
+    print(f"{question}?")
+    numbered_answers = dict(zip(ascii_lowercase, alt_answers))
+    for number, alternative in numbered_answers.items():
+        print(f" {number}) {alternative}")
+    while (answer_number := input("\nYour Choice?: ")) not in numbered_answers:
+        print(f"Please pick between options a, b, c, or d")
+    return numbered_answers[answer_number]
