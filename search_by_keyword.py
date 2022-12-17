@@ -133,6 +133,3 @@ def return_with_space_between_each_output():
     elif return_keyword_passages() == subchapters_with_keyword_all:
         for x in range(len(subchapters_with_keyword_all)):
             print("\n", subchapters_with_keyword_all[x], "\n")
-
-
-return_with_space_between_each_output()

@@ -4,11 +4,10 @@ from meditations_text import meditations
 
 import os 
 
-from return_the_book_and_chapter import return_book_and_chapter
-from return_book_selection import return_book
-from search_by_keyword import return_with_space_between_each_output 
+import quiz
 
-
+import return_book_selection
+import return_the_book_and_chapter
 
 def display_title_bar():
     # Clears the terminal screen, and displays a title bar.
@@ -91,9 +90,25 @@ def welcome():
         print("No worries! See you next time!")
     elif ready_to_play == "Y":
         return select_mode()
+    else:
+        print("Please try again.")
 
 def select_mode():
-    print("Please select your mode: \n1. Book Search. \n2. Quiz Game")
+    mode = input("Please select your mode. \n1. Book Search. \n2. Quiz Game")
+    if int(mode) == 1:
+        book_mode = input("Which book mode would you like? \n1. Return Whole Book by Book Number (1-12). \n2. Return a Specific Chapter From One of 12 Books.\n3. Search a Specific Book and Return all Instances of a Keyword. (Keyword search for topics/themes.)")
+        if int(book_mode) == 1:
+            return return_book_selection.return_book()
+        elif int(book_mode) == 2:
+            
 
+
+
+
+def boot_up():
+    display_title_bar()
+    welcome()
+
+boot_up()
 
 

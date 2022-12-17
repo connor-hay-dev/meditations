@@ -54,5 +54,3 @@ def return_book_and_chapter():
         print(meditations_book_12[meditations_chapter_chosen_index_correction])
     else: 
         print("Book ", meditations_book_chosen, " does not have that many chapters! Please try again.")
-
-return_book_and_chapter()

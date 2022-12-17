@@ -48,5 +48,3 @@ def return_book():
         print(listtostring(meditations_book_12))
     else:
         print("Meditations does not have that many books! Please try again.")
-
-return_book()
