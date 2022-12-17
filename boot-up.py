@@ -8,6 +8,7 @@ import quiz
 
 import return_book_selection
 import return_the_book_and_chapter
+import search_by_keyword
 
 def display_title_bar():
     # Clears the terminal screen, and displays a title bar.
@@ -88,22 +89,27 @@ def welcome():
     ready_to_play = input("Are you ready to have fun? (and learn a little, of course!) (Y/N) : ")
     if ready_to_play == "N":
         print("No worries! See you next time!")
+    elif ready_to_play == "n":
+        print("No worries! See you next time!")
     elif ready_to_play == "Y":
+        return select_mode()
+    elif ready_to_play == "y":
         return select_mode()
     else:
         print("Please try again.")
 
 def select_mode():
-    mode = input("Please select your mode. \n1. Book Search. \n2. Quiz Game")
+    mode = input("Please select your mode. \n1. Book Search. \n2. Quiz Game. \n Your Selection: ")
     if int(mode) == 1:
         book_mode = input("Which book mode would you like? \n1. Return Whole Book by Book Number (1-12). \n2. Return a Specific Chapter From One of 12 Books.\n3. Search a Specific Book and Return all Instances of a Keyword. (Keyword search for topics/themes.)")
         if int(book_mode) == 1:
             return return_book_selection.return_book()
         elif int(book_mode) == 2:
-            
-
-
-
+            return return_the_book_and_chapter.return_book_and_chapter()
+        elif int(book_mode) == 3:
+            return search_by_keyword.search_book_for_string()
+    elif int(mode) == 2:
+        return quiz.quiz_execution()
 
 def boot_up():
     display_title_bar()
