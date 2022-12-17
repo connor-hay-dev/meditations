@@ -52,3 +52,6 @@ def get_answers(question, alt_answers):
     while (answer_number := input("\nYour Choice?: ")) not in numbered_answers:
         print(f"Please pick between options a, b, c, or d")
     return numbered_answers[answer_number]
+
+if __name__ == "__main__":
+    quiz_execution()

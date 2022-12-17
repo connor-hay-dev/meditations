@@ -4,6 +4,8 @@ from meditations_text import meditations
 
 import os 
 
+from quiz import quiz_execution()
+
 meditations_book_1 = meditations["1"]
 meditations_book_2 = meditations["2"]
 meditations_book_3 = meditations["3"]
@@ -91,5 +93,6 @@ JJJ???????????J55555PPPPPPPPPPPPPPPPPPPPPPPPPPGGPBGY?7!~~Y5555555555555555YYYYYY
     print("\t- Marcus Aurelius Meditations 4.23")
     print("\n")
     ready_to_play = input("Are you ready to have fun? (and learn a little, of course!) (Y/N) : ")
+    select_mode = input("Please select mode: ")
 
 display_title_bar()
