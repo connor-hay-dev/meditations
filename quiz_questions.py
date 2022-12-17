@@ -18,8 +18,8 @@ quiz_questions = {
     ]
 }
 
-number_of_questions = min(number_of_questions_per_quiz, len(quiz_questions))
-questions = random.sample(list(quiz_questions.items()), k=number_of_questions_per_quiz)
+
+questions = 
 
 # lists question and answer options 
 num_correct = 0
@@ -49,7 +49,10 @@ for num, (question, alt_answers) in enumerate(questions, start=1):
 
 def quiz_execution():
 
-def question_preparation():
+#prepares questions
+def question_preparation(questions, number_of_questions):
+    number_of_questions = min(number_of_questions_per_quiz, len(quiz_questions))
+    return random.sample(list(quiz_questions.items()), k=number_of_questions_per_quiz)
 
 def ask_questions():
 
