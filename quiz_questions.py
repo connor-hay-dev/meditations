@@ -40,9 +40,23 @@ for num, (question, alt_answers) in enumerate(questions, start=1):
     answer = numbered_answers[answer_number]
     if answer == correct_answer:
         num_correct += 1
-        print("⭐️Correct - Great job!⭐️")
+        print("\n⭐️Correct - Great job!⭐️")
     else:
         print(f"🛑The answer is {correct_answer}, not {answer!r}. Good Try!🛑")
+
+
+#build some functions to help organise the code 
+
+def quiz_execution():
+
+def question_preparation():
+
+def ask_questions():
+
+def get_answers():
+
+
+
 
 print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print(f"\nYou got {num_correct} answers correct out of {num} questions!")
