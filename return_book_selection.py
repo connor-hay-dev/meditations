@@ -15,13 +15,13 @@ meditations_book_10 = meditations["10"]
 meditations_book_11 = meditations["11"]
 meditations_book_12 = meditations["12"]
 
-meditations_book_chosen = int(input("Which Book Would You Like to Search (1 to 12)?: "))
-
+#converts the book which is originally in a list, into a plain text string
 def listtostring(s):
     str1 = ""
     return (str1.join(s))
 
 def return_book(): 
+    meditations_book_chosen = int(input("Which Book Would You Like to Search (1 to 12)?: "))
     if meditations_book_chosen == 1:
         print(listtostring(meditations_book_1))
     elif meditations_book_chosen == 2:

@@ -4,20 +4,11 @@ from meditations_text import meditations
 
 import os 
 
-from quiz import quiz_execution()
+from return_the_book_and_chapter import return_book_and_chapter
+from return_book_selection import return_book
+from search_by_keyword import return_with_space_between_each_output 
 
-meditations_book_1 = meditations["1"]
-meditations_book_2 = meditations["2"]
-meditations_book_3 = meditations["3"]
-meditations_book_4 = meditations["4"]
-meditations_book_5 = meditations["5"]
-meditations_book_6 = meditations["6"]
-meditations_book_7 = meditations["7"]
-meditations_book_8 = meditations["8"]
-meditations_book_9 = meditations["9"]
-meditations_book_10 = meditations["10"]
-meditations_book_11 = meditations["11"]
-meditations_book_12 = meditations["12"]
+
 
 def display_title_bar():
     # Clears the terminal screen, and displays a title bar.
@@ -92,7 +83,17 @@ JJJ???????????J55555PPPPPPPPPPPPPPPPPPPPPPPPPPGGPBGY?7!~~Y5555555555555555YYYYYY
         things return.\"""")
     print("\t- Marcus Aurelius Meditations 4.23")
     print("\n")
-    ready_to_play = input("Are you ready to have fun? (and learn a little, of course!) (Y/N) : ")
-    select_mode = input("Please select mode: ")
 
-display_title_bar()
+def welcome():
+    display_title_bar
+    ready_to_play = input("Are you ready to have fun? (and learn a little, of course!) (Y/N) : ")
+    if ready_to_play == "N":
+        print("No worries! See you next time!")
+    elif ready_to_play == "Y":
+        return select_mode()
+
+def select_mode():
+    print("Please select your mode: \n1. Book Search. \n2. Quiz Game")
+
+
+
