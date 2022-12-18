@@ -5,6 +5,8 @@ _Connor Hay - Student Number: 13716_
 
 #### Link to my GitHub Repo: [Stoic Scourer Terminal App](https://github.com/ConnorCoderAcademy/meditations)
 
+#### Link to my slidedeck video: [Slidedeck Youtube Video](https://youtu.be/k5xIKh9xbsE)
+
 ------
 
 ##### All variable names used in the code for this application adhere to the "snake_case" style. 
