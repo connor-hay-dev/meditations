@@ -61,12 +61,12 @@ _Connor Hay - Student Number: 13716_
 
 **Accept Answers:**
 
-![](/assignment_schedules_screenshots/get_answers_schedule.png)
+![](/docs//assignment_schedules_screenshots/get_answers_schedule.png)
 <br>
 
 **Running Tally:**
 
-![](/assignment_schedules_screenshots/running_tally_schedule.png)
+![](/docs/assignment_schedules_screenshots/running_tally_schedule.png)
 
 ----
 
