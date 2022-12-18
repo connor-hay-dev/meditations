@@ -3,6 +3,8 @@ import random
 # a nice function that provides lower case letters which I have used to number the question options (a,b,c,d instead of (1,2,3,4).
 from string import ascii_lowercase
 
+from main import select_mode
+
 number_of_questions_per_quiz = 5
 
 quiz_questions = { 
@@ -18,6 +20,15 @@ quiz_questions = {
     ]
 }
 
+def next_step():
+    next = input("Press Y to play again. Press any other key to go back to main menu.")
+    if next == "y":
+        quiz_execution()
+    elif next == "Y":
+        quiz_execution()
+    else:
+        select_mode()
+
 def quiz_execution():
     questions = question_preparation(quiz_questions, number_of_questions=number_of_questions_per_quiz)
     num_correct = 0
@@ -27,6 +38,7 @@ def quiz_execution():
     print(f"\nYou have answered {num_correct} questions out of {num} correctly! Fantastic!")
     score_average = (num_correct/num)*100
     print(f"That is a success rate of ", round(score_average, 2), "%!")
+    next_step()
 
 #prepares questions
 def question_preparation(questions, number_of_questions):
