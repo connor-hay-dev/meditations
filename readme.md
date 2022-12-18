@@ -34,8 +34,127 @@ _Connor Hay - Student Number: 13716_
         <br>
         <li><strong>Keeps a Running Tally of The Score:</strong><br>The quiz keeps track of how many answers are correct and keeps a running tally. At the end of the quiz, it returns the score out of 5, as well as the percentage correct. </li>
 
+----
 
+### Development Plan Checklist with Deadlines
 
+**Search By Book:**
+![](/assignment_schedules_screenshots/search_by_book_schedule.png)
+<br>
+
+**Search By Book and Chapter:**
+
+![](/assignment_schedules_screenshots/search_by_book_and_chapter_schedule.png)
+<br>
+
+**Keyword Search:**
+
+![](/assignment_schedules_screenshots/keyword_search_schedule.png)
+<br>
+
+**Random Questions:**
+
+![](/assignment_schedules_screenshots/random_questions_schedule.png)
+<br>
+
+**Accept Answers:**
+
+![](/assignment_schedules_screenshots/get_answers_schedule.png)
+<br>
+
+**Running Tally:**
+
+![](/assignment_schedules_screenshots/running_tally_schedule.png)
+
+----
+
+### Development Plan Trello with Work Flow Progression
+
+**Search by Book:**
+
+![](/screenshots%20for%20md/search_book_by_function_trello_screenshots/searchbybook1.png)
+<br>
+![](/screenshots%20for%20md/search_book_by_function_trello_screenshots/searchbybook2.png)
+<br>
+![](/screenshots%20for%20md/search_book_by_function_trello_screenshots/searchbybook3.png)
+<br>
+![](/screenshots%20for%20md/search_book_by_function_trello_screenshots/searchbybook4.png)
+<br>
+![](/screenshots%20for%20md/search_book_by_function_trello_screenshots/searchbybook5.png)
+<br></br>
+
+**Search by Book and Chapter:**
+
+![](/screenshots%20for%20md/return_book_and_chapter_trello_screenshots/returnbook1.png)
+<br>
+![](/screenshots%20for%20md/return_book_and_chapter_trello_screenshots/returnbook2.png)
+<br>
+![](/screenshots%20for%20md/return_book_and_chapter_trello_screenshots/returnbook3.png)
+<br>
+![](/screenshots%20for%20md/return_book_and_chapter_trello_screenshots/returnbook4.png)
+<br></br>
+
+**Search by Book and keyword:**
+
+![](/screenshots%20for%20md/search_by_keyword_tello_screenshots/searchkeyword1.png)
+<br>
+![](/screenshots%20for%20md/search_by_keyword_tello_screenshots/searchkeyword2.png)
+<br>
+![](/screenshots%20for%20md/search_by_keyword_tello_screenshots/searchkeyword3.png)
+<br>
+![](/screenshots%20for%20md/search_by_keyword_tello_screenshots/searchkeyword4.png)
+<br>
+![](/screenshots%20for%20md/search_by_keyword_tello_screenshots/searchkeyword5.png)
+<br>
+![](/screenshots%20for%20md/search_by_keyword_tello_screenshots/searchkeyword6.png)
+<br></br>
+
+**Randomise Questions:**
+
+![](/screenshots%20for%20md/randomise_questions_trello_screenshots/randomise1.png)
+<br>
+![](/screenshots%20for%20md/randomise_questions_trello_screenshots/randomise2.png)
+<br>
+![](/screenshots%20for%20md/randomise_questions_trello_screenshots/randomise3.png)
+<br>
+![](/screenshots%20for%20md/randomise_questions_trello_screenshots/randomise4.png)
+<br>
+![](/screenshots%20for%20md/randomise_questions_trello_screenshots/randomise5.png)
+<br>
+![](/screenshots%20for%20md/randomise_questions_trello_screenshots/randomise6.png)
+<br>
+
+**Accept User Input for Answers:**
+
+![](/screenshots%20for%20md/accept_user_input_for_answer_trello_screenshots/userinput1.png)
+<br>
+![](/screenshots%20for%20md/accept_user_input_for_answer_trello_screenshots/userinput2.png)
+<br>
+![](/screenshots%20for%20md/accept_user_input_for_answer_trello_screenshots/userinput3.png)
+<br>
+![](/screenshots%20for%20md/accept_user_input_for_answer_trello_screenshots/userinput4.png)
+<br>
+![](/screenshots%20for%20md/accept_user_input_for_answer_trello_screenshots/userinput5.png)
+<br>
+![](/screenshots%20for%20md/accept_user_input_for_answer_trello_screenshots/userinput6.png)
+<br></br>
+
+**Running Tally:**
+
+![](/screenshots%20for%20md/running_tally_trello_screenshots/runningtally1.png)
+<br>
+![](/screenshots%20for%20md/running_tally_trello_screenshots/runningtally2.png)
+<br>
+![](/screenshots%20for%20md/running_tally_trello_screenshots/runningtally3.png)
+<br>
+![](/screenshots%20for%20md/running_tally_trello_screenshots/runningtally4.png)
+<br>
+![](/screenshots%20for%20md/running_tally_trello_screenshots/runningtally5.png)
+<br>
+![](/screenshots%20for%20md/running_tally_trello_screenshots/runningtally6.png)
+<br>
+![](/screenshots%20for%20md/running_tally_trello_screenshots/runningtally7.png)
+<br>
 
 
 # Sources
