@@ -2,8 +2,7 @@ import random
 
 # a nice function that provides lower case letters which I have used to number the question options (a,b,c,d instead of (1,2,3,4).
 from string import ascii_lowercase
-
-from main import select_mode
+import os
 
 number_of_questions_per_quiz = 5
 
@@ -21,13 +20,15 @@ quiz_questions = {
 }
 
 def next_step():
-    next = input("Press Y to play again. Press any other key to go back to main menu.")
+    next = input("Press Y to play again. Press N to close application.")
     if next == "y":
         quiz_execution()
     elif next == "Y":
         quiz_execution()
-    else:
-        select_mode()
+    elif next == "N":
+            os.system('cls||clear')
+    elif next == "n":
+            os.system('cls||clear')
 
 def quiz_execution():
     questions = question_preparation(quiz_questions, number_of_questions=number_of_questions_per_quiz)
