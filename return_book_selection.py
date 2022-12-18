@@ -47,4 +47,6 @@ def return_book():
     elif meditations_book_chosen == 12:
         print(listtostring(meditations_book_12))
     else:
-        print("Meditations does not have that many books! Please try again.")
+        input("\nMeditations does not have that many books! Please any key to choose again.\n")
+        return_book()
+

@@ -21,7 +21,16 @@ meditations_full = meditations_book_1 + meditations_book_2 + meditations_book_3 
     meditations_book_7 + meditations_book_8 + meditations_book_9 + \
     meditations_book_10 + meditations_book_11 + meditations_book_12
 
-    
+def next_step():
+    next_step = input("That key word does not seem to exist in Meditations Book 1. Do you want to try another word? (Y/N) :")
+    if next_step == "Y":
+        search_book_for_string()
+    elif next_step == "y":
+        search_book_for_string()
+    elif next_step == "N":
+        os.system('cls||clear')
+    elif next_step == "n":
+        os.system('cls||clear')
 
 def search_book_for_string():
     book = int(input("Which book would you like to search? (1 - 12, or 13 to search all the books.): "))
@@ -221,5 +230,3 @@ def search_book_for_string():
                 os.system('cls||clear')
             elif next_step == "n":
                 os.system('cls||clear')
-
-search_book_for_string()

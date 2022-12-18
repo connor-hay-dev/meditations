@@ -73,7 +73,7 @@ J??????????????J5PPGGGGGGGGGGGGGGGGGGGGGGGGGGGPPPGGY??7!~5PPPPPGGGGGPPPPPPPPPPPP
 JJJ???????????J55555PPPPPPPPPPPPPPPPPPPPPPPPPPGGPBGY?7!~~Y5555555555555555YYYYYYYYYYYYYYYYYJ????????""")
     print("\n")
     print("\t***********************************************************************************")
-    print("\t************************ Greetings Fellow Philosphers!  ***************************")
+    print("\t************************ Greetings Fellow Philospher!  ***************************")
     print("\t***********************************************************************************")
     print("\t***********************************************************************************")
     print("\n")
@@ -86,7 +86,8 @@ JJJ???????????J55555PPPPPPPPPPPPPPPPPPPPPPPPPPGGPBGY?7!~~Y5555555555555555YYYYYY
 
 def welcome():
     display_title_bar
-    ready_to_play = input("Are you ready to have fun? (and learn a little, of course!) (Y/N) : ")
+    name = input("Please tell me your name!: ")
+    ready_to_play = input(f"\nHi {name}! Are you ready to have fun? (and learn a little, of course!) (Y/N) : ")
     if ready_to_play == "N":
         print("No worries! See you next time!")
     elif ready_to_play == "n":
@@ -96,10 +97,11 @@ def welcome():
     elif ready_to_play == "y":
         return select_mode()
     else:
-        print("Please try again.")
+        input("That isn't an option! Please press any key to select again!")
+        welcome()
 
 def select_mode():
-    mode = input("Please select your mode. \n1. Book Search. \n2. Quiz Game. \n Your Selection: ")
+    mode = input("\nPlease select your mode: \n\n1. Book Search. \n\n2. Quiz Game. \n\nYour Selection: ")
     if int(mode) == 1:
         book_mode = input("Which book mode would you like? \n1. Return Whole Book by Book Number (1-12). \n2. Return a Specific Chapter From One of 12 Books.\n3. Search a Specific Book and Return all Instances of a Keyword. (Keyword search for topics/themes.)")
         if int(book_mode) == 1:
@@ -110,6 +112,11 @@ def select_mode():
             return search_by_keyword.search_book_for_string()
     elif int(mode) == 2:
         return quiz.quiz_execution()
+    else:
+        input("That isn't an option! Please press any key to select again!")
+        select_mode()
+
+
 
 def boot_up():
     display_title_bar()
