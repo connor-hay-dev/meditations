@@ -6,5 +6,5 @@ then
     To install Python, check out https://installpython3.com/' >&2
   exit 1
 fi
-osascript -e 'tell application "System events" to keystroke "f" using {command down, control down}'
+
 python3 main.py
