@@ -1,0 +1,13 @@
+How to initiate the app:
+
+1. Open the "terminal" application.
+
+2. Change directory to the "src" folder which contains all of the python files.
+
+3. type the following and hit enter: "./run_app.sh" (do not include the quotation marks)
+
+4. Have fun~~!
+
+Important info:
+
+When system prompts you with (Y/N) options, just hit the y key or the n key to make your selection. (y= yes, n= no).

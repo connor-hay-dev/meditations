@@ -7,4 +7,5 @@ then
   exit 1
 fi
 osascript -e 'tell application "System events" to keystroke "f" using {command down, control down}'
+pip install -r requirements.txt
 python3 main.py
